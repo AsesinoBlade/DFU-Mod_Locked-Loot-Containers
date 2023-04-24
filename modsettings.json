@@ -1,16 +1,33 @@
 {
     "Version": "1.00",
     "Sections": [
-	{
+        {
+            "Name": "GameOptions",
+            "Description": null,
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 0,
+                    "Max": 100,
+                    "Value": 10,
+                    "Name": "BaseChestOddsMultiplier",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
             "Name": "GraphicsSettings",
             "Description": "Related To Graphical Settings For Mod Assets",
             "IsAdvanced": false,
             "Keys": [
-				{
+                {
                     "Options": [
                         "2D Sprite",
                         "3D Low-Poly",
-						"3D High-Poly"
+                        "3D High-Poly"
                     ],
                     "Value": 1,
                     "Name": "ChestGraphicType",

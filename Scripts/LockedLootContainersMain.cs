@@ -36,6 +36,7 @@ namespace LockedLootContainers
         public static int ChestGraphicType { get; set; }
         public static bool AllowChestCollision { get; set; }
         public static bool AllowChestShadows { get; set; }
+        public static int BaseChestOddsMultiplier { get; set; }
 
         // Mod Compatibility Check Values
         public static bool RepairToolsCheck { get; set; }
@@ -243,7 +244,7 @@ namespace LockedLootContainers
             ChestGraphicType = mod.GetSettings().GetValue<int>("GraphicsSettings", "ChestGraphicType");
             AllowChestCollision = mod.GetSettings().GetValue<bool>("GraphicsSettings", "ChestCollisionToggle");
             AllowChestShadows = mod.GetSettings().GetValue<bool>("GraphicsSettings", "ChestShadowsToggle");
-
+            BaseChestOddsMultiplier = mod.GetSettings().GetValue<int>("GameOptions", "BaseChestOddsMultiplier");
             RefreshChestGraphics();
         }
 
@@ -850,7 +851,7 @@ namespace LockedLootContainers
 
                 if (DaggerfallUI.UIManager.WindowCount == 0 && LastUIWindow is DaggerfallInventoryWindow)
                 {
-                    if (LastLootedChest != null)
+                    if (LastLootedChest != null &&LastLootedChest.customDrop == false && LastLootedChest != null)
                     {
                         if (LastLootedChest.ContainerType == LootContainerTypes.Nothing && LastLootedChest.ContainerImage == InventoryContainerImages.Chest)
                         {

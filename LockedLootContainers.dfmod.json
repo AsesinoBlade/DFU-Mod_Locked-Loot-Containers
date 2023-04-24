@@ -5,7 +5,7 @@
     "ContactInfo": "kirkoliveri@gmail.com",
     "DFUnity_Version": "0.14.5",
     "ModDescription": "Replaces Some Generated Loot Containers With Locked Chests.",
-    "GUID": "13001a8b-9126-4835-8423-33e0c022787f",
+    "GUID": "28a429e1-aa87-45ce-b64d-d6b00fe2837b",
     "Files": [
         "Assets/Game/Mods/DFU-Mod_Locked-Loot-Containers/ItemTemplates.json",
         "Assets/Game/Mods/DFU-Mod_Locked-Loot-Containers/modsettings.json",
@@ -188,6 +188,7 @@
         "Assets/Game/Mods/DFU-Mod_Locked-Loot-Containers/Audio/Arrow_Hit_Chest/WoW_ArrowImpactsShieldBlock_4.wav",
         "Assets/Game/Mods/DFU-Mod_Locked-Loot-Containers/Audio/Arrow_Hit_Chest/ArrowPingsOffMetal_3.wav"
     ],
+    "ModPreCompile": true,
     "Dependencies": [
         {
             "Name": "roleplayrealism",
